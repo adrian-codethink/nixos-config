@@ -1,6 +1,6 @@
 {
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.04";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.05";
     disko.url = "github:nix-community/disko";
     disko.inputs.nixpkgs.follows = "nixpkgs";
   };
@@ -34,7 +34,7 @@
 
             users.users.root.openssh.authorizedKeys.keys = rootAuthorizedKeys;
 
-            system.stateVersion = "24.04";
+            system.stateVersion = "24.05";
           })
         ];
       };
