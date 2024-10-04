@@ -33,6 +33,7 @@
             ];
 
             users.users.root.openssh.authorizedKeys.keys = rootAuthorizedKeys;
+            users.users.root.initialPassword = "root";
 
             system.stateVersion = "24.05";
           })
