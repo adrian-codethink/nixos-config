@@ -26,6 +26,11 @@
               efi.canTouchEfiVariables = true;
             };
             networking = { inherit hostName; };
+#	    time.timezone = "Europe/London";
+	    i18n = {
+	      defaultLocale = "en_GB.UTF-8";
+	    };
+	    console.keyMap = "uk";
             services.openssh.enable = true;
             environment.systemPackages = with pkgs; [
               git
